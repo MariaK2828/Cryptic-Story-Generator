@@ -1,0 +1,21 @@
+// cryptic story generator
+
+// arrays with story segments
+const beginnings = ['I began hearing noises from inside the old castle.', 'the raccoon infestation began.', 'I woke up with wings.']
+const middle = [' I found it terrifying. ',' I found it upsetting. '," I found it fascinating. "]
+const end = ['Ultimately, it caused a great disturbance in the village.', 'Rihanna came to fix it.','The oracle said that this meant the world was ending.']
+
+function storyMaker(){
+    // generates random numbers so stpry pieces can be mixed up
+    rand1 = Math.floor(Math.random() * 3)
+    rand2 = Math.floor(Math.random() * 3)
+    rand3 = Math.floor(Math.random() * 3)
+
+    // prints the story in order
+    console.log("Once upon a time, " + beginnings[rand1] + middle[rand2] + end[rand3])
+
+}
+
+// executes function
+storyMaker()
+console.log("-- The end --")
